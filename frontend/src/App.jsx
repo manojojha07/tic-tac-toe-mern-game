@@ -161,7 +161,8 @@ const App = () => {
     setPlayerName(username);
     setWaitingForOpponent(true);
 
-    const newSocket = io("http://localhost:3000", {
+    // https://tic-tac-toe-mern-game.onrender.com
+    const newSocket = io("https://tic-tac-toe-mern-game.onrender.com", {
       autoConnect: true,
     });
 
