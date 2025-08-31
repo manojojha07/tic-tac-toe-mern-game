@@ -4,7 +4,9 @@ require("dotenv").config();
 
 const httpServer = createServer();
 const io = new Server(httpServer, {
-  cors: "http://localhost:5174/",
+ cors: ["http://localhost:5174/",
+  "tic-tac-toe-mern-game-seven.vercel.app"
+],
 });
 
 const allUsers = {};
